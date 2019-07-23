@@ -1,158 +1,165 @@
-
 /*-----------------------------------------------Layout and Aesthetics--------------------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-background-image: linear-gradient(to bottom, rgb(72, 127, 214), rgb(206, 206, 206) 70%, rgba(206, 206, 206,.8)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
-  }
-
-.article-wrapper {
-    background-image: linear-gradient(to top, #7093cc, rgb(206,206,206) 85%, rgba(206, 206, 206,.6)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
-    padding: 0;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    padding: 2.5rem ;
+  background-image: linear-gradient(to bottom, rgb(72, 127, 214), rgb(206, 206, 206) 70%, rgba(206, 206, 206, 0.8)),
+    url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
+  padding: 1.5rem 0;
 }
 
+.article-wrapper {
+  background-image: linear-gradient(to top, #7093cc, rgb(206, 206, 206) 85%, rgba(206, 206, 206, 0.6)),
+    url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
+  padding: 0;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
 
 .title::after {
   content: "";
 }
 
 .article-wrapper > .row > .col-xs-12 p {
-    margin-bottom: 5rem;
-
+  margin-bottom: 5rem;
 }
 
+.github-link {
+  text-align: center;
+  font-weight: 500;
+}
+
+.github-link a {
+  color: rgba(206, 206, 206, 0.8);
+}
 
 /*------------------------------------------------Text Styling------------------------------------------*/
 
 .row h1.title {
-  font-family: 'Kumar One', Verdana, Sans-serif;
+  font-family: "Kumar One", Verdana, Sans-serif;
   color: rgb(150, 116, 22);
   font-size: 5rem;
   margin-bottom: 0;
 }
 
-
 .row h1 small {
-    display: block;
-    font-family: 'Play', Verdana, sans-serif;
+  display: block;
+  font-family: "Play", Verdana, sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-    color: rgb(91, 91, 91);
- }
+  color: rgb(91, 91, 91);
+}
 
 .row h2 {
-font-family:  'Play', Verdana, sans-serif;
+  font-family: "Play", Verdana, sans-serif;
   font-weight: bold;
-    text-decoration: underline;
+  text-decoration: underline;
   margin-top: 5rem;
 }
 
 .article-wrapper {
-    font-family: 'Heebo', Verdana, sans-serif;
-    line-height: 1.7;
+  font-family: "Heebo", Verdana, sans-serif;
+  line-height: 1.7;
 }
 
-.article-wrapper a, .article-wrapper a:visited {
-    font-weight: bold;
-    color: #23527c !important;
+.article-wrapper a,
+.article-wrapper a:visited {
+  font-weight: bold;
+  color: #23527c !important;
 }
 
-.article-wrapper a:focus, .article-wrapper a:hover, .article-wrapper a:active{
-    font-weight: bold;
-    color: #337ab7 !important;
-    text-decoration: none;
-    transition: color 0.5s ease;
+.article-wrapper a:focus,
+.article-wrapper a:hover,
+.article-wrapper a:active {
+  font-weight: bold;
+  color: #337ab7 !important;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
-
 
 /*----------------------------------------Images and Videos----------------------------------------------*/
 
 img {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
-.embed-container { position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%; 
-    margin-bottom: 5rem;} 
-.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*----------------------------------------Blockquote----------------------------------------------*/
 
-.quote-container{
-    display:flex;
-    flex-direction: column;
-align-items: center;}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 blockquote {
-    quotes:"\201C""\201D""\2018""\2019";
-    font-family: 'Play', Verdana, sans-serif;
-    font-weight: bold;
-    color: rgb(150, 116, 22);  
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: "Play", Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(150, 116, 22);
 }
 
 blockquote.blockquote-reverse footer {
-    color: rgb(91,91,91);
-    font-size: 1.5rem;
-    font-family: 'Heebo', Verdana, sans-serif;
+  color: rgb(91, 91, 91);
+  font-size: 1.5rem;
+  font-family: "Heebo", Verdana, sans-serif;
 }
 
 blockquote p {
- 
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 blockquote::before {
-    float: left;
-    content: open-quote;
-    font-size: 5em;
-    line-height: 0.1em;
-    color: #333;
-    margin-top: 1.3rem;
-    
+  float: left;
+  content: open-quote;
+  font-size: 5em;
+  line-height: 0.1em;
+  color: #333;
+  margin-top: 1.3rem;
 }
 
-@media (max-width: 575px){
-    blockquote p {
+@media (max-width: 575px) {
+  blockquote p {
     font-size: 1.5rem;
-}
-
-    
+  }
 }
 
 /*----------------------------------------Discography table----------------------------------------------*/
 .discog {
- width: 100%;
+  width: 100%;
   border-top: 1px solid white;
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-.discog tr{
- 
+.discog tr {
   border-bottom: 1px solid white;
   padding-bottom: 50px;
-    
 }
-
 
 .discog td {
   margin-left: 15px;
-
 }
 
 .discog td img {
@@ -163,250 +170,227 @@ blockquote::before {
 }
 
 @media (max-width: 575px) {
-
-.discog {
-  margin: 0 auto;
+  .discog {
+    margin: 0 auto;
     margin-bottom: 2rem;
-}
+  }
 
+  .discog td {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+  }
 
-.discog td {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.discog td img {
-  width: 175px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-  
-
+  .discog td img {
+    width: 175px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
 }
 
 /*------------------------------------------------------------Featured Section-------------------------------------------------------------*/
 
-
-.featured-section h3{
+.featured-section h3 {
   text-align: center;
-    font-family: 'Play', Verdana, sans-serif;
-    font-weight: bold;
+  font-family: "Play", Verdana, sans-serif;
+  font-weight: bold;
 }
 
-
-
 .featured-section > .row > div a {
-    display: block;
-    max-width: 250px;
-    border-radius: 100%;
-    margin: 0 auto 2rem;
-    padding: .5rem;
-
+  display: block;
+  max-width: 250px;
+  border-radius: 100%;
+  margin: 0 auto 2rem;
+  padding: 0.5rem;
 }
 
 .featured-section p {
-    max-width: 400px;
-        margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .featured-section > .row > div a:hover {
-    background-color: #23527c;
-     transition: background-color 0.5s ease;
+  background-color: #23527c;
+  transition: background-color 0.5s ease;
 }
 
 @media (max-width: 768px) {
-.featured-section > .row > div {
-  margin: 0 auto;
-  float: none;
-}
+  .featured-section > .row > div {
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 /*-------------------------------------------------------------General Responsive Layout-----------------------------------------*/
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
   .article-wrapper {
     font-size: 1.5rem;
     padding: 1.2rem;
-     background-image: linear-gradient(to top, #7093cc, rgb(206,206,206) 95%, rgba(206, 206, 206,.5)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
+    background-image: linear-gradient(to top, #7093cc, rgb(206, 206, 206) 95%, rgba(206, 206, 206, 0.5)),
+      url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
   }
-    
-    
+
   .row .col-xs-9 {
     display: block;
     margin: 0 auto;
     float: none;
-    
   }
-  
-  .row h1.title{
+
+  .row h1.title {
     font-size: 3rem;
-    
   }
-    .row h1.title small {
-        font-size: 1.7rem;
-    }
-  
+  .row h1.title small {
+    font-size: 1.7rem;
+  }
+
   .article-wrapper > .row > .col-xs-12 p {
     margin-bottom: 2rem;
-
-}
-
-    
-}
-
-
-
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  }
 }
 
 body {
-background-image: linear-gradient(to bottom, rgb(72, 127, 214), rgb(206, 206, 206) 70%, rgba(206, 206, 206,.8)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
-  }
-
-.article-wrapper {
-    background-image: linear-gradient(to top, #7093cc, rgb(206,206,206) 85%, rgba(206, 206, 206,.6)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
-    padding: 0;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    padding: 2.5rem ;
+  background-image: linear-gradient(to bottom, rgb(72, 127, 214), rgb(206, 206, 206) 70%, rgba(206, 206, 206, 0.8)),
+    url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
 }
 
+.article-wrapper {
+  background-image: linear-gradient(to top, #7093cc, rgb(206, 206, 206) 85%, rgba(206, 206, 206, 0.6)),
+    url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
+  padding: 0;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
 
 .title::after {
   content: "";
 }
 
 .article-wrapper > .row > .col-xs-12 p {
-    margin-bottom: 5rem;
-
+  margin-bottom: 5rem;
 }
-
 
 /*------------------------------------------------Text Styling------------------------------------------*/
 
 .row h1.title {
-  font-family: 'Kumar One', Verdana, Sans-serif;
+  font-family: "Kumar One", Verdana, Sans-serif;
   color: rgb(150, 116, 22);
   font-size: 5rem;
   margin-bottom: 0;
 }
 
-
 .row h1 small {
-    display: block;
-    font-family: 'Play', Verdana, sans-serif;
+  display: block;
+  font-family: "Play", Verdana, sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-    color: rgb(91, 91, 91);
- }
+  color: rgb(91, 91, 91);
+}
 
 .row h2 {
-font-family:  'Play', Verdana, sans-serif;
+  font-family: "Play", Verdana, sans-serif;
   font-weight: bold;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .article-wrapper {
-    font-family: 'Heebo', Verdana, sans-serif;
-    line-height: 1.7;
+  font-family: "Heebo", Verdana, sans-serif;
+  line-height: 1.7;
 }
 
-.article-wrapper a, .article-wrapper a:visited {
-    font-weight: bold;
-    color: #23527c !important;
+.article-wrapper a,
+.article-wrapper a:visited {
+  font-weight: bold;
+  color: #23527c !important;
 }
 
-.article-wrapper a:focus, .article-wrapper a:hover, .article-wrapper a:active{
-    font-weight: bold;
-    color: #337ab7 !important;
-    text-decoration: none;
-    transition: color 0.5s ease;
+.article-wrapper a:focus,
+.article-wrapper a:hover,
+.article-wrapper a:active {
+  font-weight: bold;
+  color: #337ab7 !important;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
-
 
 /*----------------------------------------Images and Videos----------------------------------------------*/
 
 img {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
-.embed-container { position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%; } 
-.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*----------------------------------------Blockquote----------------------------------------------*/
 
-.quote-container{
-    display:flex;
-    flex-direction: column;
-align-items: center;}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 blockquote {
-    quotes:"\201C""\201D""\2018""\2019";
-    font-family: 'Play', Verdana, sans-serif;
-    font-weight: bold;
-    color: rgb(150, 116, 22);  
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: "Play", Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(150, 116, 22);
 }
 
 blockquote.blockquote-reverse footer {
-    color: rgb(91,91,91);
-    font-size: 1.5rem;
-    font-family: 'Heebo', Verdana, sans-serif;
+  color: rgb(91, 91, 91);
+  font-size: 1.5rem;
+  font-family: "Heebo", Verdana, sans-serif;
 }
 
 blockquote p {
- 
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 blockquote::before {
-    float: left;
-    content: open-quote;
-    font-size: 5em;
-    line-height: 0.1em;
-    color: #333;
-    margin-top: 1.3rem;
-    
+  float: left;
+  content: open-quote;
+  font-size: 5em;
+  line-height: 0.1em;
+  color: #333;
+  margin-top: 1.3rem;
 }
 
-@media (max-width: 575px){
-    blockquote p {
+@media (max-width: 575px) {
+  blockquote p {
     font-size: 1.5rem;
-}
-
-    
+  }
 }
 
 /*----------------------------------------Discography table----------------------------------------------*/
 .discog {
- width: 100%;
+  width: 100%;
   border-top: 1px solid white;
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-.discog tr{
- 
+.discog tr {
   border-bottom: 1px solid white;
   padding-bottom: 50px;
-    
 }
-
 
 .discog td {
   margin-left: 15px;
-
 }
 
 .discog td img {
@@ -417,98 +401,81 @@ blockquote::before {
 }
 
 @media (max-width: 575px) {
-
-.discog {
-  margin: 0 auto;
+  .discog {
+    margin: 0 auto;
     margin-bottom: 2rem;
-}
+  }
 
+  .discog td {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+  }
 
-.discog td {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.discog td img {
-  width: 175px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-  
-
+  .discog td img {
+    width: 175px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
 }
 
 /*------------------------------------------------------------Featured Section-------------------------------------------------------------*/
 
-
-.featured-section h3{
+.featured-section h3 {
   text-align: center;
-    font-family: 'Play', Verdana, sans-serif;
-    font-weight: bold;
+  font-family: "Play", Verdana, sans-serif;
+  font-weight: bold;
 }
 
-
-
 .featured-section > .row > div a {
-    display: block;
-    max-width: 250px;
-    border-radius: 100%;
-    margin: 0 auto 2rem;
-    padding: .5rem;
-
+  display: block;
+  max-width: 250px;
+  border-radius: 100%;
+  margin: 0 auto 2rem;
+  padding: 0.5rem;
 }
 
 .featured-section p {
-    max-width: 400px;
-        margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .featured-section > .row > div a:hover {
-    background-color: #23527c;
-     transition: background-color 0.5s ease;
+  background-color: #23527c;
+  transition: background-color 0.5s ease;
 }
 
 @media (max-width: 768px) {
-.featured-section > .row > div {
-  margin: 0 auto;
-  float: none;
-}
+  .featured-section > .row > div {
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 /*-------------------------------------------------------------General Responsive Layout-----------------------------------------*/
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
   .article-wrapper {
     font-size: 1.5rem;
     padding: 1.2rem;
-     background-image: linear-gradient(to top, #7093cc, rgb(206,206,206) 95%, rgba(206, 206, 206,.5)), url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
+    background-image: linear-gradient(to top, #7093cc, rgb(206, 206, 206) 95%, rgba(206, 206, 206, 0.5)),
+      url(https://res.cloudinary.com/doilm39ov/image/upload/v1496276980/background_z3degz.jpg);
   }
-    
-    
-    
+
   .row .col-xs-9 {
     display: block;
     margin: 0 auto;
     float: none;
-    
   }
-  
-  .row h1.title{
+
+  .row h1.title {
     font-size: 3rem;
-    
   }
-    .row h1.title small {
-        font-size: 1.7rem;
-    }
-  
+  .row h1.title small {
+    font-size: 1.7rem;
+  }
+
   .article-wrapper > .row > .col-xs-12 p {
     margin-bottom: 2rem;
-
+  }
 }
-
-    
-}
-
-
-
